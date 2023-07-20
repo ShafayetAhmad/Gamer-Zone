@@ -7,23 +7,96 @@
   font-family: "Work Sans", sans-serif;
 }
 
-/* Header Styles  */
+/* Nav Styles  */
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 40px 240px;
+}
+
+nav .site-title {
+  display: flex;
+  align-items: center;
+}
+
+.site-icon {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.site-icon-text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.icon-g {
+  color: #ff42af;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 nav li {
   margin-right: 20px;
+  color: #3c354f;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 nav a {
   text-decoration: none;
+}
+.nav-follow {
+  background-color: rgba(11, 2, 35, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+}
+.nav-follow-icon {
+  width: 1.5rem;
+  margin: 0px 10px;
+}
+
+/* Header Styles  */
+
+.header-container {
+  margin: 0px 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.banner-left-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  padding-right: 300px;
+}
+
+.banner-left-title .goat {
+  color: #c54fcf;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.banner-right {
+  max-width: 700px;
+}
+.banner-right img{
+  max-width: 500px;
 }
