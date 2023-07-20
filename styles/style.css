@@ -1,0 +1,29 @@
+/* Shared Styles */
+
+/* Work Sans Font from Google  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Header Styles  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 240px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
