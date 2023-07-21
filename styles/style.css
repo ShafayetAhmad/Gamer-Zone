@@ -178,7 +178,7 @@ p {
   width: 20%;
 }
 
-.grid-card img {
+.grid-card > img {
   width: 100%;
 }
 
@@ -186,6 +186,21 @@ p {
   color: #534c64;
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.grid-container{
+  position: relative;
+}
+
+.play-icon{
+  width: 100px;
+  position: absolute;
+  right: 25%;
+  top: 30%;
+}
+
+.play-icon:hover{
+  box-shadow: 0 0 10px 110px rgb(9, 0, 0, .5);
 }
 
 /* game-section styles  */
@@ -241,6 +256,7 @@ p {
 .grid-item:hover {
   border: 1px solid orangered;
   border-radius: 50px;
+  color: orangered;
 }
 
 /* footer styles  */
@@ -315,7 +331,7 @@ p {
   font-weight: 500;
 }
 
-/* responsive styles  */
+/* responsive styles for tablet */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav {
@@ -352,6 +368,9 @@ p {
     padding-right: 20%;
   }
 }
+
+
+/* responsive styles for tablet */
 
 @media screen and (max-width: 576px) {
   nav {
