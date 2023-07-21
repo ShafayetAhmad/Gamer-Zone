@@ -26,7 +26,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 240px;
+  margin: 40px 20%;
 }
 
 nav .site-title {
@@ -82,21 +82,26 @@ nav a {
 /* Header Styles  */
 
 .header-container {
-  margin: 0px 240px;
+  margin: 20px 10% 0px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 70px;
 }
 
-.banner-left-title {
+/* header right styles  */
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10%;
+}
+
+.header-left-title {
   color: #0b0223;
-  text-align: center;
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
-
-  padding-right: 300px;
 }
 
 .banner-left-title .goat {
@@ -107,13 +112,6 @@ nav a {
   text-transform: uppercase;
 }
 
-.banner-right {
-  max-width: 700px;
-}
-.banner-right img {
-  max-width: 500px;
-}
-
 .banner-left-description p {
   color: #534c64;
   text-align: left;
@@ -122,16 +120,17 @@ nav a {
   text-transform: lowercase;
 }
 
-.btn-rogue{
-background-color: #4EC5F7;
+.btn-rogue {
+  background-color: #4ec5f7;
 }
 
-/* @media screen and (max-width: 576px) {
-  nav {
-    margin: 0px 0px;
-  }
 
-  .header-container {
-    margin: 0px 0px;
-  }
-} */
+/* header left styles  */
+
+.header-right {
+  width: 500px;
+}
+
+.header-right img {
+  max-width: 100%;
+}
