@@ -267,6 +267,18 @@ p {
   margin: 0px;
 }
 
+.footer-nav {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
 /* responsive styles  */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -395,6 +407,14 @@ p {
 
   /* footer-style  */
   .footer {
-  padding-top: 30px;
-}
+    padding-top: 30px;
+  }
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: 0px;
+  }
 }
