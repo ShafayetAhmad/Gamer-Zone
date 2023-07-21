@@ -3,6 +3,8 @@
 /* Shared Styles */
 * {
   font-family: "Work Sans", sans-serif;
+  /* margin: 0px;
+  padding: 0px; */
 }
 
 .btn-primary {
@@ -26,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 20%;
+  margin: 40px 12% 40px 12%;
 }
 
 nav .site-title {
@@ -82,7 +84,7 @@ nav a {
 /* Header Styles  */
 
 .header-container {
-  margin: 20px 10% 0px 10%;
+  margin: 20px 0.1vw 0px 0.1vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,14 +99,16 @@ nav a {
   padding-right: 10%;
 }
 
-.header-left-title {
+.section-title {
   color: #0b0223;
+  text-align: center;
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
-.banner-left-title .goat {
+.section-title .title-pink {
   color: #c54fcf;
   text-align: center;
   font-size: 6rem;
@@ -112,7 +116,7 @@ nav a {
   text-transform: uppercase;
 }
 
-.banner-left-description p {
+.header-left-description p {
   color: #534c64;
   text-align: left;
   font-size: 1.4rem;
@@ -120,17 +124,242 @@ nav a {
   text-transform: lowercase;
 }
 
+.header-left-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .btn-rogue {
   background-color: #4ec5f7;
 }
 
-
-/* header left styles  */
-
-.header-right {
-  width: 500px;
-}
-
 .header-right img {
   max-width: 100%;
+}
+
+/* Main Section Styles  */
+
+/* grid section styles  */
+
+.grid-section {
+  margin: 100px 0.1vw 0px 0.1vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-section h2,
+p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#funny-videos,
+#play-instantly {
+  font-size: 3rem;
+}
+
+.section-description {
+  color: #534c64;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.grid-card {
+  width: 20%;
+}
+
+.grid-card img {
+  width: 100%;
+}
+
+.grid-img-description {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* game-section styles  */
+
+.game-section {
+  margin: 20px 10% 0px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.game-section-right {
+  position: relative;
+}
+.game-main-photo {
+  width: 80%;
+  height: 80%;
+  padding-left: 15%;
+}
+
+.game-sub-photo {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: -20%;
+}
+
+/* tag section  */
+
+.tag-section {
+  margin: 300px 10% 100px 10%;
+}
+
+.tag-grid-row-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.tag-grid-row-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.grid-item{
+  display: flex;
+  gap: 5px 20px;
+  padding: 20px;
+}
+
+.grid-item:hover {
+  border: 1px solid orangered;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    margin: 10px 12% 10px 12%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-container {
+    margin: 20px 10% 0px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+  .grid-card {
+    width: 80%;
+  }
+
+  .game-section {
+    flex-direction: column;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    margin: 10px 12% 10px 12%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .header-left {
+    margin-left: 15%;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .header-left-description p {
+    text-align: center;
+  }
+
+  .header-left-buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-right img {
+    margin-top: 50px;
+    max-width: 80%;
+    justify-content: center;
+  }
+
+  /* grid section responsive styles  */
+  .grid {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .grid-card {
+    width: 80%;
+  }
+
+  .game-section {
+    flex-direction: column;
+    /* padding-right: 20%; */
+    /* margin: 20px 30px 0px 30px; */
+    gap: 0px;
+  }
+
+  .game-main-photo img {
+    width: 100%;
+    height: 80%;
+    /* padding-left: 15%; */
+  }
+  .game-sub-photo {
+    bottom: -35%;
+    right: 40%;
+  }
+
+  .game-sub-photo img {
+    width: 50%;
+  }
+
+  /* tag section responsive */
 }
